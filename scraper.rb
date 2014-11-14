@@ -5,10 +5,7 @@ require 'date'
 base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/generalenquiry/"
 url = "#{base_url}enquirylists.aspx"
 
-agent = Mechanize.new do |a|
-  a.verify_mode = OpenSSL::SSL::VERIFY_NONE
-end
-
+agent = Mechanize.new
 first_page = agent.get url
 p first_page.title.strip
 first_page_form = first_page.forms.first
