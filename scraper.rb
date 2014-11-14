@@ -2,7 +2,7 @@ require 'scraperwiki'
 require 'mechanize'
 require 'date'
 
-base_url = "https://eservices.knox.vic.gov.au/ePathway/Production/Web/generalenquiry/"
+base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/generalenquiry/"
 url = "#{base_url}enquirylists.aspx"
 
 agent = Mechanize.new do |a|
