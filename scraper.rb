@@ -42,7 +42,7 @@ das = das_data.collect do |da_item|
   # There is a direct link but you need a session to access it :(
   page_info['info_url'] = url
   page_info['description'] = da_item[headers.index('Description')]
-  page_info['date_received'] = Date.strptime(da_item[headers.index('Date Lodged')], '%d/%m/%Y').to_s
+  page_info['date_received'] = Date.strptime(da_item[headers.index('Application Date')], '%d/%m/%Y').to_s
   page_info['address'] = da_item[headers.index('Location')]
   page_info['date_scraped'] = Date.today.to_s
   page_info['comment_url'] = comment_url
