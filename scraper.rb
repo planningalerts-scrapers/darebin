@@ -34,7 +34,7 @@ while summary_page
   end
 end
 
-comment_url = 'mailto:knoxcc@knox.vic.gov.au'
+comment_url = 'mailto:mailbox@darebin.vic.gov.au'
 
 das = das_data.collect do |da_item|
   page_info = {}
