@@ -18,7 +18,7 @@ params[:ciphers] = ['DES-CBC3-SHA']
 OpenSSL::SSL::SSLContext::DEFAULT_PARAMS = params
 
 first_page = agent.get url
-p first_page.title.strip
+puts "Fetched #{first_page.uri}"
 first_page_form = first_page.forms.first
 first_page_form.radiobuttons[1].click
 summary_page = first_page_form.click_button
@@ -27,7 +27,7 @@ page_number = 2 # The next page number to move onto (we've already got page 1)
 
 das_data = []
 while summary_page
-  p summary_page.title.strip
+  puts "Fetched #{summary_page.uri}"
   table = summary_page.root.at_css('.ContentPanel')
   headers = table.css('th').collect { |th| th.inner_text.strip }
 
