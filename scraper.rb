@@ -6,6 +6,17 @@ base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/general
 url = "#{base_url}enquirylists.aspx"
 
 agent = Mechanize.new
+
+# This is a heavy-handed way to change the ciphers so we can connect to this
+# really badly configured web server. The magic for this was discovered in:
+# https://stackoverflow.com/questions/33572956/ruby-ssl-connect-syscall-returned-5-errno-0-state-unknown-state-opensslssl
+# This allows it to work with Mechanize. You'll see a warning because we're
+# redefining a constant.
+params = OpenSSL::SSL::SSLContext::DEFAULT_PARAMS
+params[:ssl_version] = :TLSv1
+params[:ciphers] = ['DES-CBC3-SHA']
+OpenSSL::SSL::SSLContext::DEFAULT_PARAMS = params
+
 first_page = agent.get url
 p first_page.title.strip
 first_page_form = first_page.forms.first
