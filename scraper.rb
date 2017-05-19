@@ -1,12 +1,27 @@
 require 'scraperwiki'
 require 'mechanize'
-require 'date'
+#require 'date'
 
-base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/generalenquiry/"
+def is_valid_year(date_str, min=2009, max=DateTime.now.year)
+  if ( date_str.scan(/^(\d)+$/) )
+    if ( (min..max).include?(date_str.to_i) )
+      return true
+    end
+  end
+  return false
+end
+
+unless ( is_valid_year(ENV['MORPH_PERIOD'].to_s) )
+  ENV['MORPH_PERIOD'] = DateTime.now.year.to_s
+end
+puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
+
+base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
 url = "#{base_url}enquirylists.aspx"
+comment_url = "mailto:mailbox@darebin.vic.gov.au"
 
 agent = Mechanize.new
-
+agent.user_agent_alias = 'Mac Safari'
 # This is a heavy-handed way to change the ciphers so we can connect to this
 # really badly configured web server. The magic for this was discovered in:
 # https://stackoverflow.com/questions/33572956/ruby-ssl-connect-syscall-returned-5-errno-0-state-unknown-state-opensslssl
@@ -17,56 +32,63 @@ params[:ssl_version] = :TLSv1
 params[:ciphers] = ['DES-CBC3-SHA']
 OpenSSL::SSL::SSLContext::DEFAULT_PARAMS = params
 
-first_page = agent.get url
-puts "Fetched #{first_page.uri}"
-first_page_form = first_page.forms.first
-first_page_form.radiobuttons[1].click
-summary_page = first_page_form.click_button
+# select Planning Application
+page = agent.get url
+form = page.forms.first
+form.radiobuttons[0].click
+page = form.click_button
 
-page_number = 2 # The next page number to move onto (we've already got page 1)
-
-das_data = []
-while summary_page
-  puts "Fetched #{summary_page.uri}"
-  table = summary_page.root.at_css('.ContentPanel')
-  headers = table.css('th').collect { |th| th.inner_text.strip }
-
-  das_data = das_data + table.css('.ContentPanel, .AlternateContentPanel').collect do |tr|
-    tr.css('td').collect { |td| td.inner_text.strip }
-  end
-
-  if summary_page.at('#ctl00_MainBodyContent_mPagingControl_nextPageHyperLink')
-    p "Found another page - #{page_number}"
-    summary_page.forms.first.action = "EnquirySummaryView.aspx?PageNumber=#{page_number}"
-    summary_page = summary_page.forms.first.submit
-    page_number += 1
-  else
-    summary_page = nil
+# local DB lookup if DB exist and find out what is the maxDA number
+i = 1;
+sql = "select * from data where `council_reference` like '%/#{ENV['MORPH_PERIOD']}'"
+results = ScraperWiki.sqliteexecute(sql) rescue false
+if ( results )
+  results.each do |result|
+    maxDA = result['council_reference'].gsub!('D/', '').gsub!("/#{ENV['MORPH_PERIOD']}", '')
+    if maxDA.to_i > i
+      i = maxDA.to_i
+    end
   end
 end
 
-comment_url = 'mailto:mailbox@darebin.vic.gov.au'
+error = 0
+cont = true
+while cont do
+  form = page.form
+  form.field_with(:name=>'ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox').value = 'D/' + i.to_s + '/' + ENV['MORPH_PERIOD'].to_s
+  button = form.button_with(:value => "Search")
+  list = form.click_button(button)
 
-das = das_data.collect do |da_item|
-  page_info = {}
-  page_info['council_reference'] = da_item[headers.index('Application Number')]
-  # There is a direct link but you need a session to access it :(
-  page_info['info_url'] = url
-  page_info['description'] = da_item[headers.index('Description')]
-  page_info['date_received'] = Date.strptime(da_item[headers.index('Application Date')], '%d/%m/%Y').to_s
-  page_info['address'] = da_item[headers.index('Location')]
-  page_info['date_scraped'] = Date.today.to_s
-  page_info['comment_url'] = comment_url
-  
-  page_info
-end
+  table = list.search("table.ContentPanel")
+  unless ( table.empty? )
+    error  = 0
+    tr     = table.search("tr.ContentPanel")
 
-das.each do |record|
+    record = {
+      'council_reference' => tr.search('a').inner_text,
+      'address'           => tr.search('span')[2].inner_text,
+      'description'       => tr.search('span')[3].inner_text.gsub("\n", '. ').squeeze(' '),
+      'info_url'          => base_url + tr.search('a')[0]['href'],
+      'comment_url'       => comment_url,
+      'date_scraped'      => Date.today.to_s,
+      'date_received'     => Date.parse(tr.search('span')[1].inner_text).to_s,
+    }
 
-  if (ScraperWiki.select("* from data where `council_reference`='#{record['council_reference']}'").empty? rescue true)
-    ScraperWiki.save_sqlite(['council_reference'], record)
+    if (ScraperWiki.select("* from data where `council_reference`='#{record['council_reference']}'").empty? rescue true)
+      puts "Saving record " + record['council_reference'] + ", " + record['address']
+#       puts record
+      ScraperWiki.save_sqlite(['council_reference'], record)
+    else
+      puts 'Skipping already saved record ' + record['council_reference']
+    end
   else
-    puts "Skipping already saved record " + record['council_reference']
+    error += 1
+  end
+
+  # increase i value and scan the next DA
+  i += 1
+  if error == 10
+    cont = false
   end
 end
 
