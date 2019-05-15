@@ -7,3 +7,4 @@ gem "mechanize"
 
 gem "vcr"
 gem "webmock"
+gem "timecop"
