@@ -17,7 +17,6 @@ puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MOR
 
 base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
 url = "#{base_url}enquirylists.aspx"
-comment_url = "mailto:mailbox@darebin.vic.gov.au"
 
 agent = Mechanize.new
 agent.user_agent_alias = 'Mac Safari'
@@ -68,7 +67,6 @@ while cont do
       'address'           => tr.search('span')[2].inner_text,
       'description'       => tr.search('span')[3].inner_text.gsub("\n", '. ').squeeze(' '),
       'info_url'          => base_url + tr.search('a')[0]['href'],
-      'comment_url'       => comment_url,
       'date_scraped'      => Date.today.to_s,
       'date_received'     => Date.parse(tr.search('span')[1].inner_text).to_s,
     }
@@ -86,4 +84,3 @@ while cont do
     cont = false
   end
 end
-
