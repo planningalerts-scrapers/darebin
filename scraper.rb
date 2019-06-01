@@ -18,40 +18,23 @@ page = form.click_button
 
 i = 1;
 error = 0
-cont = true
-while cont do
-  form = page.form
-  form.field_with(:name=>'ctl00$MainBodyContent$mGeneralEnquirySearchControl$mTabControl$ctl04$mFormattedNumberTextBox').value = 'D/' + i.to_s + '/' + ENV['MORPH_PERIOD'].to_s
-  button = form.button_with(:value => "Search")
-  list = form.click_button(button)
+while error < 10 do
+  application_no = "D/#{i}/#{ENV['MORPH_PERIOD']}"
 
-  table = list.search("table.ContentPanel")
-  unless ( table.empty? )
-    error  = 0
+  list = EpathwayScraper::Page::Search.search_for_one_application(page, application_no)
 
-    EpathwayScraper::Table.extract_table_data_and_urls(table).each do |row|
-      data = EpathwayScraper::Page::Index.extract_index_data(row)
+  count = 0
+  EpathwayScraper::Page::Index.scrape_index_page(list, scraper.base_url, scraper.agent) do |record|
+    count += 1
+    EpathwayScraper.save(record)
+  end
 
-      record = {
-        'council_reference' => data[:council_reference],
-        'address'           => data[:address],
-        'description'       => data[:description],
-        'info_url'          => scraper.base_url,
-        'date_scraped'      => Date.today.to_s,
-        'date_received'     => data[:date_received],
-      }
-
-      EpathwayScraper.save(record)
-    end
-
-
-  else
+  if count == 0
     error += 1
+  else
+    error  = 0
   end
 
   # increase i value and scan the next DA
   i += 1
-  if error == 10
-    cont = false
-  end
 end
