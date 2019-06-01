@@ -1,16 +1,17 @@
-require 'scraperwiki'
-require 'mechanize'
+require "epathway_scraper"
 
 ENV['MORPH_PERIOD'] ||= DateTime.now.year.to_s
 puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
 
+scraper = EpathwayScraper::Scraper.new(
+  "https://eservices.darebin.vic.gov.au/ePathway/Production"
+)
+
 base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
 url = "#{base_url}enquirylists.aspx"
 
-agent = Mechanize.new
-
 # select Planning Application
-page = agent.get url
+page = scraper.agent.get url
 form = page.forms.first
 form.radiobuttons[0].click
 page = form.click_button
@@ -38,9 +39,7 @@ while cont do
       'date_received'     => Date.parse(tr.search('span')[1].inner_text).to_s,
     }
 
-    puts "Saving record " + record['council_reference'] + ", " + record['address']
-#       puts record
-    ScraperWiki.save_sqlite(['council_reference'], record)
+    EpathwayScraper.save(record)
   else
     error += 1
   end
