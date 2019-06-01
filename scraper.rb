@@ -7,9 +7,6 @@ scraper = EpathwayScraper::Scraper.new(
   "https://eservices.darebin.vic.gov.au/ePathway/Production"
 )
 
-base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
-url = "#{base_url}enquirylists.aspx"
-
 # select Planning Application
 page = scraper.agent.get scraper.base_url
 form = page.forms.first
