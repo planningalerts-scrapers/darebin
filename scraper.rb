@@ -11,7 +11,7 @@ base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/General
 url = "#{base_url}enquirylists.aspx"
 
 # select Planning Application
-page = scraper.agent.get url
+page = scraper.agent.get scraper.base_url
 form = page.forms.first
 form.radiobuttons[0].click
 page = form.click_button
