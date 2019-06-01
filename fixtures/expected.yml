@@ -154,10 +154,9 @@
   date_received: '2019-03-14'
 - council_reference: D/119/2019
   address: 2 Simpson Street NORTHCOTE  VIC  3070
-  description: Proposed building and works on land less than 300 square metres in
-    a residential zone including restoration of existing dwelling and new two storey
-    addition at the rear incorporating a single car garage with vehicular access from
-    the ROW as shown on the plans accompanying the application
+  description: Building and works on land less than 300 square metres including restoration
+    of existing dwelling and double storey addition to the rear incorporating a garage
+    with  ROW access as shown on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-14'
@@ -249,8 +248,8 @@
   date_received: '2019-01-16'
 - council_reference: D/130/2019
   address: 33-43 Plenty Road PRESTON  VIC  3072
-  description: One Hundred and Twenty Four (124) Lot Subdivision and removal of easements
-    as shown on the plans accompanying the application
+  description: Proposed One Hundred and Twenty Four (124) Lot Subdivision and Removal
+    of Easements as shown on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-21'
@@ -355,8 +354,8 @@
   date_received: '2019-03-27'
 - council_reference: D/144/2019
   address: 59-61 Hawthorn Road NORTHCOTE  VIC  3070
-  description: Proposed partial demolition and alterations and additions as shown
-    on the plans accompanying the application
+  description: Partial demolition to the rear of the existing dwelling and alterations
+    and additions as shown on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-27'
@@ -399,8 +398,8 @@
 - council_reference: D/15/2019
   address: 554 Murray Road PRESTON  VIC  3072
   description: A medium density housing development comprised of the construction
-    of four (4) double-storey dwellings with rooftop terraces; alteration to access
-    to a Road Zone Category 1; as shown on the plans accompanying the application.
+    of four (4) double-storey dwellings; alterations to access to a Road Zone Category
+    1; as shown on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-16'
@@ -481,9 +480,11 @@
   date_received: '2019-01-18'
 - council_reference: D/160/2019
   address: 851-859 High Street THORNBURY  VIC  3071
-  description: Building and works to an existing building on a site covered by a Heritage
-    Overlay, including painting, replacing windows, screening of plant & equipment
-    and removal of signage as shown on the plans accompanying the application.
+  description: Partial demolition (ground floor doors/windows & signage) and building
+    and works to an existing building on a site covered by a Heritage Overlay, including
+    restoration of upper level windows, replacement of door/windows at ground level,
+    relocation and screening of plant & equipment and removal of signage as shown
+    on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-03-29'
@@ -534,15 +535,16 @@
   date_received: '2019-04-03'
 - council_reference: D/167/2019
   address: 102 Massey Avenue RESERVOIR  VIC  3073
-  description: Proposed construction of 2 double storey town houses as shown on the
-    plans accompanying the application
+  description: Proposed construction of two (2) double storey town houses as shown
+    on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-03'
 - council_reference: D/168/2019
   address: 163 Station Street FAIRFIELD  VIC  3078
-  description: Construction of a triple storey (plus basement) building comprising
-    eight (8) dwellings as shown on the plans accompanying the application.
+  description: Construction of a three (3) storey building comprising eight (8) apartments,
+    a reduction in the car parking requirement and alteration of access to a Road
+    Zone - Category 1.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-03'
@@ -655,7 +657,7 @@
 - council_reference: D/183/2019
   address: 4 Gracie Street NORTHCOTE  VIC  3070
   description: Proposed development of two (2) single storey dwellings on two (2)
-    separate lots as shown on the plans accompanying the application.
+    separate lots, as shown on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-09'
@@ -717,8 +719,8 @@
   date_received: '2019-04-15'
 - council_reference: D/191/2019
   address: 459-465 Heidelberg Road FAIRFIELD  VIC  3078
-  description: Proposed to replace Mercedes Benz branding signs as shown on the plans
-    accompanying the application
+  description: Replacement of Mercedes Benz branding signs as shown on the endorsed
+    plans.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-10'
@@ -790,7 +792,7 @@
   date_received: '2019-01-08'
 - council_reference: D/20/2019
   address: 598-604 High Street THORNBURY  VIC  3071
-  description: Development of three (3) food trucks, as shown on the plans accompanying
+  description: Development of three (3) food vans, as shown on the plans accompanying
     the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -804,8 +806,8 @@
   date_received: '2019-04-17'
 - council_reference: D/201/2019
   address: 358 High Street NORTHCOTE  VIC  3070
-  description: Proposed installation of an ATM on a shopfront as shown on the plans
-    accompanying the application
+  description: External alteration of an existing shopfront (installation of an ATM)
+    as shown on the endorsed plans.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-18'
@@ -851,8 +853,9 @@
   date_received: '2019-04-23'
 - council_reference: D/208/2019
   address: 24 Davies Street PRESTON  VIC  3072
-  description: Proposed Double Storey Dwelling as shown on the plans accompanying
-    the application
+  description: Demolition of existing dwelling, and construction of a double storey
+    dwelling, on land within a Heritage Overlay and Special Building Overlay, as shown
+    on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-23'
@@ -886,15 +889,16 @@
   date_received: '2019-04-24'
 - council_reference: D/213/2019
   address: 108 Gooch Street THORNBURY  VIC  3071
-  description: Proposed two double-storey residential dwellings as shown on the plans
-    accompanying the application
+  description: Two (2) double storey dwellings, in accordance with the plans accompanying
+    the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-24'
 - council_reference: D/214/2019
   address: 17 Oakover Road PRESTON  VIC  3072
-  description: Proposed rear extension to the existing weather board residence as
-    shown on the application accompanying the application
+  description: Partial demolition, and alterations and additions to an existing dwelling
+    covered by the Heritage Overlay (HO168) and Special Building Overlay (SBO) as
+    shown on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-26'
@@ -907,15 +911,17 @@
   date_received: '2019-04-29'
 - council_reference: D/216/2019
   address: 647-663 Heidelberg Road ALPHINGTON  VIC  3078
-  description: Proposed additional food van business and erection of signs on property
-    used as a car wash as shown on the plans accompanying the application
+  description: Use and development as a take away food premises (food truck) and associated
+    signs on land affected by a Public Acquisition Overlay and alteration of access
+    to a Road Zone - category 1 as shown on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-29'
 - council_reference: D/217/2019
   address: 155 Westbourne Grove NORTHCOTE  VIC  3070
-  description: PROPOSED SINGLE RESIDENTIAL DWELLING WITH REAR LANE GARAGE AND FIRST
-    STOREY STUDIO AS SHOWN ON THE PLANS ACCOMPANYING THE APPLICATION
+  description: Construction of buildings and works for a double storey outbuilding
+    to the rear of the existing dwelling on a lot affected by a Heritage Overlay (HO97),
+    as shown on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-29'
@@ -927,7 +933,8 @@
   date_received: '2019-04-30'
 - council_reference: D/219/2019
   address: 424 Clarke Street NORTHCOTE  VIC  3070
-  description: Proposed extension to existing dwelling as shown on the plans accompanying
+  description: Proposed extension and additional storey to the existing single-storey
+    dwelling on a lot under 300 square metres, as shown on the plans accompanying
     the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -1037,31 +1044,31 @@
   date_received: '2019-05-10'
 - council_reference: D/233/2019
   address: 53C Walker Street NORTHCOTE  VIC  3070
-  description: Proposed construction of three (3) double storey dwellings as shown
-    on the plans accompanying the application.
+  description: Construction of three (3) double storey dwellings on the lot affected
+    by a Heritage Overlay (HO160), as shown on the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-10'
 - council_reference: D/234/2019
   address: 321 Spring Street RESERVOIR  VIC  3073
-  description: Proposed new signage to front & rear facades of new liquor store and
-    existing adjoining Coles supermarket as shown on the plans accompanying the application.
+  description: Display of business identification signage at front & rear facades
+    of new liquor store and existing adjoining Coles supermarket as shown on the plans
+    accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-04-26'
 - council_reference: D/235/2019
   address: 13 Osborne Street NORTHCOTE  VIC  3070
-  description: Proposed Redevelopment of existing 8.2 Metre x 4.070 Metre area within
-    existing roofline of building to form new addition to single dwelling including
-    new 1m x 4.5 m decking at rear of property as shown on the plans accompanying
-    the application
+  description: Rear extension and the relocation of the existing shed, in accordance
+    with the plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-13'
 - council_reference: D/236/2019
   address: 55-57 Tyler Street PRESTON  VIC  3072
-  description: Proposed construction of a fence on a property with in an overlay as
-    shown on the plans accompanying the application
+  description: Construction of a fence on land affected by a Special Building Overlay
+    (SBO) and a Land Subject to Inundation Overlay (LSIO) as shown on the plans accompanying
+    the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-13'
@@ -1103,12 +1110,135 @@
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-05-14'
+- council_reference: D/242/2019
+  address: 69 Mitchell Street NORTHCOTE  VIC  3070
+  description: Removal of Easement as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-15'
+- council_reference: D/243/2019
+  address: 2 McComas Street RESERVOIR  VIC  3073
+  description: Proposed construction of Seven dwellings on one lot as shown on the
+    plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-15'
+- council_reference: D/244/2019
+  address: 5 Nisbett Street RESERVOIR  VIC  3073
+  description: Proposed 12 UNIT RESIDENTIAL DEVELOPMENT as shown on the plans accompanying
+    the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-16'
+- council_reference: D/245/2019
+  address: 7 Curtain Street KINGSBURY  VIC  3083
+  description: Five (5) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-16'
+- council_reference: D/246/2019
+  address: 195-209 St Georges Road NORTHCOTE  VIC  3070
+  description: Proposed creation of opening for new door to be used as a secondary
+    exit in building, as shown on the plans accompanying the application.
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-06'
+- council_reference: D/247/2019
+  address: 18 Clunes Street KINGSBURY  VIC  3083
+  description: Construction of three (3) double storey dwellings as shown on the plans
+    accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-17'
+- council_reference: D/248/2019
+  address: 17 Hopetoun Street NORTHCOTE  VIC  3070
+  description: A three (3) storey dwelling, as shown on the plans accompanying the
+    application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-20'
+- council_reference: D/249/2019
+  address: 11 Newmarket Street NORTHCOTE  VIC  3070
+  description: Proposed alterations and additions to existing residence in a heritage
+    overlay, demolition of an existing fence and construction of a new fence, decking
+    and internal renovation as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-17'
 - council_reference: D/25/2019
   address: 28-44 Albert Street PRESTON  VIC  3072
   description: Two (2) Lot Subdivision as shown on the plans accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-24'
+- council_reference: D/250/2019
+  address: 11 Rucker Street NORTHCOTE  VIC  3070
+  description: Proposed Partial demolition and proposed alterations and additions
+    to a dwelling as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-21'
+- council_reference: D/251/2019
+  address: 30 Collins Street PRESTON  VIC  3072
+  description: Proposed alteration and addition to existing single dwelling as shown
+    on the plans accompanying the application.
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: D/252/2019
+  address: 119 Boldrewood Parade RESERVOIR  VIC  3073
+  description: Three (3) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: D/253/2019
+  address: 2 Wilson Boulevard RESERVOIR  VIC  3073
+  description: Removal of Restrictive Covenant
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: D/254/2019
+  address: 34 Clarke Street NORTHCOTE  VIC  3070
+  description: Proposed partial demolition/alterations and additions to the existing
+    single-storey dwelling on land affected by the heritage overlay and less than
+    300 square metres in area as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-16'
+- council_reference: D/255/2019
+  address: 11 Hosken Street RESERVOIR  VIC  3073
+  description: Medium density housing development comprising the construction of four
+    (4) double storey dwellings as shown on the plans accompanying the application.
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-16'
+- council_reference: D/256/2019
+  address: 77 McMahon Road RESERVOIR  VIC  3073
+  description: Proposed additional dwelling to the rear of an existing dwelling as
+    shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-21'
+- council_reference: D/257/2019
+  address: 80 Tyler Street RESERVOIR  VIC  3073
+  description: One Hundred and Seven (107) Lot Subdivision over Four stages as shown
+    on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-22'
+- council_reference: D/258/2019
+  address: 570 High Street PRESTON  VIC  3072
+  description: Proposed Change of use from retail store to Food and Beverage Premises
+    as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-24'
+- council_reference: D/259/2019
+  address: 1/4 Best Street RESERVOIR  VIC  3073
+  description: Four (4) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
 - council_reference: D/26/2019
   address: 19/148 Arthurton Road NORTHCOTE  VIC  3070
   description: Additions and alterations to an existing building including a third
@@ -1117,13 +1247,111 @@
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-25'
+- council_reference: D/260/2019
+  address: 44 Tyler Street PRESTON  VIC  3072
+  description: PROPOSED 4-UNIT DEVELOPMENT CONSTRUCTION OF 4 DWELLINGS WITH GARAGE
+    AS SHOWN ON THE PLANS ACCOMPANYING THE APPLICATION
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/261/2019
+  address: 11 Gillingham Street PRESTON  VIC  3072
+  description: Proposed new rear deck and fences to single house sa shown on the plans
+    accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/262/2019
+  address: 7 Eunson Avenue NORTHCOTE  VIC  3070
+  description: Proposed 3 bedroom double storey dwelling with associated garage as
+    shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/263/2019
+  address: 84 St Georges Road PRESTON  VIC  3072
+  description: Proposed Five (5) Townhouse Development & Reduction in carparking as
+    shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/264/2019
+  address: 92 Bell Street PRESTON  VIC  3072
+  description: Two (2) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/265/2019
+  address: 8 Strettle Street THORNBURY  VIC  3071
+  description: Proposed Multi-unit Development as shown on the plans accompanying
+    the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-27'
+- council_reference: D/266/2019
+  address: 10 Benambra Street PRESTON  VIC  3072
+  description: PROPOSED DEVELOPMENT CONSTRUCTION OF 7 DWELLINGS WITH GARAGE WAIVER
+    VISITOR PARKING AS SHOWN ON THE PLANS ACCOMPANYING THE APPLICATION
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: D/267/2019
+  address: 1047 High Street RESERVOIR  VIC  3073
+  description: PROPOSED 2-UNIT DEVELOPMENT CONSTRUCTION OF 2 DWELLINGS WITH GARAGE
+    AS SHOWN ON THE PLANS ACCOMPANYING THE APPLICATION
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-28'
+- council_reference: D/268/2019
+  address: 61 Darebin Boulevard RESERVOIR  VIC  3073
+  description: Four (4) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
+- council_reference: D/269/2019
+  address: 22 Austral Avenue PRESTON  VIC  3072
+  description: Proposed Construction of two double storey dwellings as shown on the
+    plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-29'
 - council_reference: D/27/2019
   address: 3 Dumbarton Street RESERVOIR  VIC  3073
-  description: Construction of four, double storey dwellings as shown on the pans
+  description: Construction of four (4) double storey dwellings as shown on the plans
     accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-01-25'
+- council_reference: D/270/2019
+  address: 92 Flinders Street THORNBURY  VIC  3071
+  description: ePathway
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: D/271/2019
+  address: 158 Grange Road ALPHINGTON  VIC  3078
+  description: Two (2) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: D/272/2019
+  address: 43 Cuthbert Road RESERVOIR  VIC  3073
+  description: Two (2) Lot Subdivision as shown on the plans accompanying the application
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: D/273/2019
+  address: 8 Plateau Road RESERVOIR  VIC  3073
+  description: ePathway
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-05-30'
+- council_reference: D/274/2019
+  address: 46 Dunstan Street PRESTON  VIC  3072
+  description: ePathway
+  info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
+  date_scraped: '2019-05-15'
+  date_received: '2019-06-01'
 - council_reference: D/28/2019
   address: 13 King William Street RESERVOIR  VIC  3073
   description: Proposed alterations and additions to an existing dwelling in a Heritage
@@ -1303,8 +1531,13 @@
   date_received: '2019-01-09'
 - council_reference: D/50/2019
   address: 54 Beavers Road NORTHCOTE  VIC  3070
-  description: Proposed double storey renovation to the rear of the property as shown
-    on the plans accompanying the application
+  description: |-
+    Partial demolition of existing building and demolition of
+    outbuildings and buildings and works comprising a
+    double storey extension (and associated alterations
+    and additions) to the rear of the existing dwelling on
+    land covered by a Heritage overlay in accordance with
+    the endorsed plans.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-02-07'
@@ -1396,7 +1629,7 @@
   date_received: '2019-02-13'
 - council_reference: D/63/2019
   address: 25 Barry Street NORTHCOTE  VIC  3070
-  description: Partial demolition, alteration and single storey additions to an existing
+  description: Partial demolition, alteration and double storey additions to an existing
     dwelling on two (2) lots covered by a Heritage Overlay (HO161) as shown on the
     plans accompanying the application.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
@@ -1411,7 +1644,7 @@
   date_received: '2019-02-14'
 - council_reference: D/65/2019
   address: 39 Cuthbert Road RESERVOIR  VIC  3073
-  description: The use and construction of a second dependant person’s unit on the
+  description: The use and construction of a second dependant persons unit on the
     lot in accordance with the endorsed plans.
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
@@ -1587,15 +1820,14 @@
   date_received: '2019-02-27'
 - council_reference: D/88/2019
   address: 22 Radford Road RESERVOIR  VIC  3073
-  description: Proposed installation of two (2) shade sails and associated works in
-    accordance with the endorsed plans
+  description: Proposed installation of two (2) shade sails and associated works
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-02-21'
 - council_reference: D/89/2019
   address: 350 Murray Road PRESTON  VIC  3072
-  description: Use the land for the purpose of an Indoor Recreation facility (swim
-    school)
+  description: Use the land for the purpose of an Indoor Recreation Facility (swim
+    school) as shown on the documents accompanying the application
   info_url: https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/EnquiryLists.aspx?ModuleCode=LAP
   date_scraped: '2019-05-15'
   date_received: '2019-02-27'
