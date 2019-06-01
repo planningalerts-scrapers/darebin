@@ -35,7 +35,7 @@ while cont do
       record = {
         'council_reference' => data[:council_reference],
         'address'           => data[:address],
-        'description'       => data[:description].gsub("\n", '. ').squeeze(' '),
+        'description'       => data[:description],
         'info_url'          => scraper.base_url,
         'date_scraped'      => Date.today.to_s,
         'date_received'     => data[:date_received],
