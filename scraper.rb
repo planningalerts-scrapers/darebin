@@ -1,18 +1,7 @@
 require 'scraperwiki'
 require 'mechanize'
 
-def is_valid_year(date_str, min=2009, max=DateTime.now.year)
-  if ( date_str.scan(/^(\d)+$/) )
-    if ( (min..max).include?(date_str.to_i) )
-      return true
-    end
-  end
-  return false
-end
-
-unless ( is_valid_year(ENV['MORPH_PERIOD'].to_s) )
-  ENV['MORPH_PERIOD'] = DateTime.now.year.to_s
-end
+ENV['MORPH_PERIOD'] ||= DateTime.now.year.to_s
 puts "Getting data in year `" + ENV['MORPH_PERIOD'].to_s + "`, changable via MORPH_PERIOD environment"
 
 base_url = "https://eservices.darebin.vic.gov.au/ePathway/Production/Web/GeneralEnquiry/"
